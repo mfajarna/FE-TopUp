@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/homepage.css"> <!-- Get navbar & footer style -->
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="../css/detail.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Check Pesanan</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light bg-white pt-lg-40 pb-lg-40 pt-30 pb-50">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <svg width="126" height="63" viewBox="0 0 126 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 46L96 46" stroke="#00BAFF" stroke-width="8"/>
+                        <path d="M25.958 40.792H14.954L13.19 46H5.672L16.34 16.516H24.656L35.324 46H27.722L25.958 40.792ZM24.11 35.248L20.456 24.454L16.844 35.248H24.11ZM45.2908 40.078H55.4548V46H37.2688V40.288L47.0128 28.486H37.3528V22.564H55.2448V28.276L45.2908 40.078ZM72.4687 39.91V46H68.8147C66.2107 46 64.1807 45.37 62.7247 44.11C61.2687 42.822 60.5407 40.736 60.5407 37.852V28.528H57.6847V22.564H60.5407V16.852H67.7227V22.564H72.4267V28.528H67.7227V37.936C67.7227 38.636 67.8907 39.14 68.2267 39.448C68.5627 39.756 69.1227 39.91 69.9067 39.91H72.4687ZM98.5612 33.904C98.5612 34.576 98.5192 35.276 98.4352 36.004H82.1812C82.2932 37.46 82.7552 38.58 83.5672 39.364C84.4072 40.12 85.4292 40.498 86.6332 40.498C88.4252 40.498 89.6712 39.742 90.3712 38.23H98.0152C97.6232 39.77 96.9092 41.156 95.8732 42.388C94.8652 43.62 93.5912 44.586 92.0512 45.286C90.5112 45.986 88.7892 46.336 86.8852 46.336C84.5892 46.336 82.5452 45.846 80.7532 44.866C78.9612 43.886 77.5612 42.486 76.5532 40.666C75.5452 38.846 75.0412 36.718 75.0412 34.282C75.0412 31.846 75.5312 29.718 76.5112 27.898C77.5192 26.078 78.9192 24.678 80.7112 23.698C82.5032 22.718 84.5612 22.228 86.8852 22.228C89.1532 22.228 91.1692 22.704 92.9332 23.656C94.6972 24.608 96.0692 25.966 97.0492 27.73C98.0572 29.494 98.5612 31.552 98.5612 33.904ZM91.2112 32.014C91.2112 30.782 90.7912 29.802 89.9512 29.074C89.1112 28.346 88.0612 27.982 86.8012 27.982C85.5972 27.982 84.5752 28.332 83.7352 29.032C82.9232 29.732 82.4192 30.726 82.2232 32.014H91.2112ZM100.922 34.282C100.922 31.846 101.412 29.718 102.392 27.898C103.4 26.078 104.786 24.678 106.55 23.698C108.342 22.718 110.386 22.228 112.682 22.228C115.622 22.228 118.072 22.998 120.032 24.538C122.02 26.078 123.322 28.248 123.938 31.048H116.294C115.65 29.256 114.404 28.36 112.556 28.36C111.24 28.36 110.19 28.878 109.406 29.914C108.622 30.922 108.23 32.378 108.23 34.282C108.23 36.186 108.622 37.656 109.406 38.692C110.19 39.7 111.24 40.204 112.556 40.204C114.404 40.204 115.65 39.308 116.294 37.516H123.938C123.322 40.26 122.02 42.416 120.032 43.984C118.044 45.552 115.594 46.336 112.682 46.336C110.386 46.336 108.342 45.846 106.55 44.866C104.786 43.886 103.4 42.486 102.392 40.666C101.412 38.846 100.922 36.718 100.922 34.282Z" fill="#0C145A"/>
+                    </svg>
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-lg gap-lg-0 gap-2">
+                        <li class="nav-item my-auto">
+                            <a class="nav-link" aria-current="page" href="#"></a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+
+                        <li class="nav-item my-auto">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item my-auto me-lg-20">
+                            <a class="nav-link active" href="#">Cek Pesanan</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="btn btn-sign-in d-flex justify-content-center ms-lg-2 rounded-pill"
+                                href="./src/sign-in.html" role="button">Sign
+                                In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Detail Content -->
+    <section class="detail pt-lg-60 pb-50">
+        <div class="container-xxl container-fluid">
+            <div class="detail-header pb-50">
+                <h2 class="text-4xl fw-bold color-palette-1 text-start mb-10">Cek Pesanan</h2>
+                <p class="text-lg color-palette-1 mb-0">Cek Pesanana Anda Untuk Melihat Status Transaksi</p>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-5 pb-30 pb-md-0 pe-md-25 text-md-start">
+                    <div class="row align-items-center">
+                        <!-- Mobile: Game title -->
+                        <div class="col-md-12 col-8 d-md-none d-block">
+                            <h2 class="text-xl fw-bold color-palette-1 text-start mb-10">Cek Pesanan Kamu Disini:<br></h2>
+                            <p class="text-sm color-palette-2 text-start mb-0">Masukan Kode Transaksi/ID Transaksi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-12 col-lg-8 col-md-7 ps-md-25">
+                    <!-- Desktop: Game title -->
+                    <hr>
+                    <form action="./checkout.html" method="POST">
+                        <div class="pt-md-20 pb-50 pt-30 text-center">
+                            <div class="">
+                                <label for="ID" class="form-label text-lg fw-medium color-palette-1 mb-0">Kode Transaksi / ID Transaksi</label>
+                            </div>
+                        </div>
+                        <div class="row pb-50">
+                            <div class="col-lg-4">
+
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control rounded-pill text-lg" id="ID" name="ID"
+                                    aria-describedby="verifyID" placeholder="Masukan Kode Transaksi / ID Transaksi">
+                            </div>
+                            <div class="col-lg-4">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+
+                            </div>
+                            <div class="col-lg-4">
+                            <div class="text-center">
+                                    <a href="./checkout.html" type="submit"
+                                        class="btn btn-submit rounded-pill fw-medium text-white text-align:center border-0 text-lg">Cek Pesanan</a>
+                                    <!-- <button type="submit"
+                                        class="btn btn-submit rounded-pill fw-medium text-white border-0 text-lg">Continue</button> -->
+                            </div> 
+                            </div>
+                            <div class="col-lg-4">
+
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer pt-50">
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 text-lg-start text-center">
+                        <a href="" class="mb-30">
+                    <svg width="126" height="63" viewBox="0 0 126 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 46L96 46" stroke="#00BAFF" stroke-width="8"/>
+                        <path d="M25.958 40.792H14.954L13.19 46H5.672L16.34 16.516H24.656L35.324 46H27.722L25.958 40.792ZM24.11 35.248L20.456 24.454L16.844 35.248H24.11ZM45.2908 40.078H55.4548V46H37.2688V40.288L47.0128 28.486H37.3528V22.564H55.2448V28.276L45.2908 40.078ZM72.4687 39.91V46H68.8147C66.2107 46 64.1807 45.37 62.7247 44.11C61.2687 42.822 60.5407 40.736 60.5407 37.852V28.528H57.6847V22.564H60.5407V16.852H67.7227V22.564H72.4267V28.528H67.7227V37.936C67.7227 38.636 67.8907 39.14 68.2267 39.448C68.5627 39.756 69.1227 39.91 69.9067 39.91H72.4687ZM98.5612 33.904C98.5612 34.576 98.5192 35.276 98.4352 36.004H82.1812C82.2932 37.46 82.7552 38.58 83.5672 39.364C84.4072 40.12 85.4292 40.498 86.6332 40.498C88.4252 40.498 89.6712 39.742 90.3712 38.23H98.0152C97.6232 39.77 96.9092 41.156 95.8732 42.388C94.8652 43.62 93.5912 44.586 92.0512 45.286C90.5112 45.986 88.7892 46.336 86.8852 46.336C84.5892 46.336 82.5452 45.846 80.7532 44.866C78.9612 43.886 77.5612 42.486 76.5532 40.666C75.5452 38.846 75.0412 36.718 75.0412 34.282C75.0412 31.846 75.5312 29.718 76.5112 27.898C77.5192 26.078 78.9192 24.678 80.7112 23.698C82.5032 22.718 84.5612 22.228 86.8852 22.228C89.1532 22.228 91.1692 22.704 92.9332 23.656C94.6972 24.608 96.0692 25.966 97.0492 27.73C98.0572 29.494 98.5612 31.552 98.5612 33.904ZM91.2112 32.014C91.2112 30.782 90.7912 29.802 89.9512 29.074C89.1112 28.346 88.0612 27.982 86.8012 27.982C85.5972 27.982 84.5752 28.332 83.7352 29.032C82.9232 29.732 82.4192 30.726 82.2232 32.014H91.2112ZM100.922 34.282C100.922 31.846 101.412 29.718 102.392 27.898C103.4 26.078 104.786 24.678 106.55 23.698C108.342 22.718 110.386 22.228 112.682 22.228C115.622 22.228 118.072 22.998 120.032 24.538C122.02 26.078 123.322 28.248 123.938 31.048H116.294C115.65 29.256 114.404 28.36 112.556 28.36C111.24 28.36 110.19 28.878 109.406 29.914C108.622 30.922 108.23 32.378 108.23 34.282C108.23 36.186 108.622 37.656 109.406 38.692C110.19 39.7 111.24 40.204 112.556 40.204C114.404 40.204 115.65 39.308 116.294 37.516H123.938C123.322 40.26 122.02 42.416 120.032 43.984C118.044 45.552 115.594 46.336 112.682 46.336C110.386 46.336 108.342 45.846 106.55 44.866C104.786 43.886 103.4 42.486 102.392 40.666C101.412 38.846 100.922 36.718 100.922 34.282Z" fill="#0C145A"/>
+                    </svg>
+                        </a>
+                        <p class="mt-30 text-lg color-palette-1 mb-30">Aztec adalah tempat topup game termurah,aman,dan <br> tercepat untuk 
+                            mempermudah pembayaran anda disini kami juga menyediakan metode pembayaran <br>
+                            Alfamart, Bank BCA,DANA, OVO, Gopay, Shopee Pay, Link Aja
+                        </p>
+                        <p class="mt-30 text-lg color-palette-1 mb-30">Copyright 2021. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-8 mt-lg-0 mt-20">
+                        <div class="row gap-sm-0">
+                            <div class="col-md-4 col-6 mb-lg-0 mb-25">
+                                <p class="text-lg fw-semibold color-palette-1 mb-12">Company</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-6">
+                                        <a href="" class="text-lg color-palette-1 text-decoration-none">About Us</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a href="" class="text-lg color-palette-1 text-decoration-none">Press
+                                            Release</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a href="" class="text-lg color-palette-1 text-decoration-none">Terms of Use</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a href="" class="text-lg color-palette-1 text-decoration-none">Privacy &
+                                            Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-6 mb-lg-0 mb-25">
+                                <p class="text-lg fw-semibold color-palette-1 mb-12">Support</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-6">
+                                        <a href="" class="text-lg color-palette-1 text-decoration-none">Refund
+                                            Policy</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a href="" class="text-lg color-palette-1 text-decoration-none">Unlock
+                                            Rewards</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a href="" class="text-lg color-palette-1 text-decoration-none">Live
+                                            Chatting</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-12 mt-lg-0 mt-md-0 mt-25">
+                                <p class="text-lg fw-semibold color-palette-1 mb-12">Connect</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-6">
+                                        <a href="mailto: hi@store.gg"
+                                            class="text-lg color-palette-1 text-decoration-none">Instagram</a>
+                                    </li>
+                                    <li class="mb-6">
+                                        <a href="mailto: team@store.gg"
+                                            class="text-lg color-palette-1 text-decoration-none">Whatsapp</a>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>
